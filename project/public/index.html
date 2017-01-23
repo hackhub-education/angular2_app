@@ -11,10 +11,12 @@
         <script src="public/node_modules/systemjs/dist/system.src.js"></script>
         <script src="public/system.config.js"></script>
         <script>
-            //systemjs
+            System.import('app').catch(function (err) {
+                console.log(err);
+            });
         </script>
     </head>
     <body>
-        <my-app></my-app>
+        <my-app>Loading...</my-app>
     </body>
 </html>

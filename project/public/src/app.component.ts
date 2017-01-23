@@ -3,12 +3,10 @@ import {Component} from "@angular/core";
 //decorator
 @Component({
     selector: 'my-app',
-    templateUrl: 'app.html',
-    styleUrls: ['app.css']
+    templateUrl: 'public/src/app.html',
+    styleUrls: ['public/src/app.css']
 })
 export class AppComponent {
+    constructor() {}
     public hello: string = "Hello World";
-    public append(): void{
-        this.hello = this.hello + 'hahasdfafs';
-    }
 }
