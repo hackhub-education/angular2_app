@@ -1,4 +1,18 @@
-<pre>First name: {{student.firstName}}</pre>
-<pre>Last name: {{student.lastName}}</pre>
-<pre>Age: {{student.age}}</pre>
-<pre>Is Enrolled: {{student.isEnrolled}}</pre>
+<div class="item">
+    <pre>First name: {{student.firstName}}</pre>
+    <pre>Last name: {{student.lastName}}</pre>
+    <pre>Age: {{student.age}}</pre>
+    <pre>Is Enrolled: {{student.isEnrolled}}</pre>
+
+    <div>
+        <label>First name:</label>
+        <input type="text" [(ngModel)]="studentInput.firstName">
+        <label>Last name:</label>
+        <input type="text" [(ngModel)]="studentInput.lastName">
+        <label>Age:</label>
+        <input type="number" [(ngModel)]="studentInput.age">
+        <label>IsEnrolled: </label>
+        <input type="checkbox" [(ngModel)]="studentInput.isEnrolled">
+        <button (click)="submit()">create student</button>
+    </div>
+</div>
