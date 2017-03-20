@@ -12,9 +12,11 @@
         <script src="public/system.config.js"></script>
         <script>
             //systemjs
+            System.import('dist').catch(function(err){ console.error(err); });
         </script>
     </head>
     <body>
         <!-- load app here... -->
+        <student-list></student-list>
     </body>
 </html>

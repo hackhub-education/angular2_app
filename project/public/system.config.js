@@ -11,7 +11,7 @@
         },
         // map tells the System loader where to look for things
         map: {
-
+            dist: "public/dist",
 
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
@@ -29,7 +29,10 @@
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
-            
+            dist: {
+                main: "./main.js",
+                defaultExtension: 'js'
+            },
             rxjs: {
                 defaultExtension: 'js'
             }
